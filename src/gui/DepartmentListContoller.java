@@ -113,6 +113,7 @@ public class DepartmentListContoller implements Initializable, DataChangeListene
 			dialogStage.showAndWait();
 
 		} catch (IOException e) {
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error Loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
